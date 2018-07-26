@@ -25,6 +25,9 @@ class FoxLCD { //Инициализация класса FoxLCD
     void senddata(uint8_t data);           //Функция отправки данных в дисплей (RS подключен к единице)
     void printchar(char c);                //Функция печати символа на дисплей
     void print(char msg[]);                //Функция печати текста на дисплее
+    void print(bool boolean);              //Функция печати на дисплее логического типа данных (true/false)
+    void print(int number);                //Функция печати на дисплее целого знакового числа
+    void print(float number);                //Функция печати на дисплее знакового числая с плавающей запятой
     void clear(void);                      //Функция очистки дисплея
     void home(void);                      //Функция возврата каретки в начальное состояние
     void display(uint8_t state);          //Функция включения/отключения дисплея
